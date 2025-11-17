@@ -1,5 +1,5 @@
-import React from 'react'
-import { motion } from 'framer-motion'
+import React, { useEffect, useRef } from 'react'
+import { motion, useInView } from 'framer-motion'
 import Spline from '@splinetool/react-spline'
 
 const Button = ({ children, variant = 'primary', href = '#', onClick }) => {
@@ -18,8 +18,18 @@ const Button = ({ children, variant = 'primary', href = '#', onClick }) => {
 };
 
 export default function Hero() {
+  const sectionRef = useRef(null)
+  const inView = useInView(sectionRef, { margin: '-20% 0px -60% 0px' })
+
+  useEffect(() => {
+    // Calmer background motion while Hero is primary
+    if (inView) {
+      window.dispatchEvent(new CustomEvent('bg3d:intensity', { detail: 0.35 }))
+    }
+  }, [inView])
+
   return (
-    <section id="home" className="relative min-h-[92vh] w-full overflow-hidden bg-[#0A0A0C]">
+    <section ref={sectionRef} id="home" className="relative min-h-[92vh] w-full overflow-hidden bg-[#0A0A0C]">
       {/* Spline 3D background */}
       <div className="absolute inset-0">
         <Spline scene="https://prod.spline.design/4cHQr84zOGAHOehh/scene.splinecode" style={{ width: '100%', height: '100%' }} />

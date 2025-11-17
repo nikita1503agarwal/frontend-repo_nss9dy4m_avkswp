@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import React, { useEffect, useRef, useState } from 'react'
+import { motion, AnimatePresence, useInView } from 'framer-motion'
 
 const videos = [
   {
@@ -27,6 +27,15 @@ const videos = [
 export default function Portfolio() {
   const [active, setActive] = useState(null)
 
+  // Increase background motion when Portfolio is primary
+  const sectionRef = useRef(null)
+  const inView = useInView(sectionRef, { margin: '-40% 0px -40% 0px' })
+  useEffect(() => {
+    if (inView) {
+      window.dispatchEvent(new CustomEvent('bg3d:intensity', { detail: 0.9 }))
+    }
+  }, [inView])
+
   const handleHoverPlay = (e) => {
     const video = e.currentTarget.querySelector('video')
     if (!video) return
@@ -43,7 +52,7 @@ export default function Portfolio() {
   }
 
   return (
-    <section id="portfolio" className="relative w-full bg-[#0A0A0C] py-24 text-[#F5F5F2]">
+    <section ref={sectionRef} id="portfolio" className="relative w-full bg-[#0A0A0C] py-24 text-[#F5F5F2]">
       <div className="mx-auto max-w-6xl px-6">
         <div className="mb-10 text-center">
           <h2 className="text-2xl font-semibold md:text-4xl">Video Portfolio</h2>
@@ -117,7 +126,7 @@ export default function Portfolio() {
                 <h3 className="text-base font-medium text-white/90">{active.title}</h3>
                 <button
                   onClick={() => setActive(null)}
-                  className="rounded-md bg-white/10 px-3 py-1.5 text-sm text-white/80 backdrop-blur hover:bg-white/20"
+                  className="rounded-md bg-white/10 px-3 py-1.5 text-sm text-white/80 backdrop-blur hover:bg:white/20"
                 >
                   Close
                 </button>
