@@ -28,7 +28,8 @@ export default function Portfolio() {
           <h2 className="text-2xl font-semibold md:text-4xl">Portfolio</h2>
           <p className="mt-3 text-sm text-white/60 md:text-base">Editorial visuals with dramatic cropping.</p>
         </div>
-        <div className="columns-1 gap-5 md:columns-2 lg:columns-3 [column-fill:_balance]"><!-- masonry-like using CSS columns -->
+        {/* masonry-like using CSS columns */}
+        <div className="columns-1 gap-5 md:columns-2 lg:columns-3 [column-fill:_balance]">
           {projects.map((p, idx) => (
             <motion.a
               key={p.title}
