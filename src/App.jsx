@@ -5,6 +5,7 @@ import Portfolio from './components/Portfolio'
 import Testimonials from './components/Testimonials'
 import About from './components/About'
 import Contact from './components/Contact'
+import OtherCampaigns from './components/OtherCampaigns'
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
           <nav className="hidden gap-6 text-white/70 md:flex">
             <a href="#services" className="hover:text-white">Services</a>
             <a href="#portfolio" className="hover:text-white">Portfolio</a>
+            <a href="#campaigns" className="hover:text-white">Campaigns</a>
             <a href="#testimonials" className="hover:text-white">Words</a>
             <a href="#about" className="hover:text-white">About</a>
             <a href="#contact" className="rounded-full bg-white/10 px-4 py-2 hover:bg-white/15">Contact</a>
@@ -28,6 +30,7 @@ export default function App() {
         <Hero />
         <Services />
         <Portfolio />
+        <OtherCampaigns />
         <Testimonials />
         <About />
         <Contact />
