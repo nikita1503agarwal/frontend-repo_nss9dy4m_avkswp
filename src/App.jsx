@@ -6,10 +6,14 @@ import Testimonials from './components/Testimonials'
 import About from './components/About'
 import Contact from './components/Contact'
 import OtherCampaigns from './components/OtherCampaigns'
+import Background3D from './components/Background3D'
 
 export default function App() {
   return (
     <div className="min-h-screen w-full scroll-smooth bg-[#0A0A0C] font-[Manrope] text-[#F5F5F2]">
+      {/* Global parallax 3D background */}
+      <Background3D />
+
       {/* Top nav */}
       <header className="fixed inset-x-0 top-0 z-50 backdrop-blur-xl">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
