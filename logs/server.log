@@ -1,0 +1,107 @@
+
+> vibe-generated-app@1.0.0 dev
+> vite
+
+
+  VITE v5.4.20  ready in 194 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://172.20.59.57:3000/
+12:11:29 AM [vite] Pre-transform error: Transform failed with 1 error:
+/home/workspace/src/components/Portfolio.jsx:31:91: ERROR: Expected identifier but found "!"
+12:11:29 AM [vite] Internal server error: Transform failed with 1 error:
+/home/workspace/src/components/Portfolio.jsx:31:91: ERROR: Expected identifier but found "!"
+  Plugin: vite:esbuild
+  File: /home/workspace/src/components/Portfolio.jsx:31:91
+  
+  Expected identifier but found "!"
+  29 |            <p className="mt-3 text-sm text-white/60 md:text-base">Editorial visuals with dramatic cropping.</p>
+  30 |          </div>
+  31 |          <div className="columns-1 gap-5 md:columns-2 lg:columns-3 [column-fill:_balance]"><!-- masonry-like using CSS columns -->
+     |                                                                                             ^
+  32 |            {projects.map((p, idx) => (
+  33 |              <motion.a
+  
+      at failureErrorWithLog (/home/workspace/node_modules/esbuild/lib/main.js:1472:15)
+      at /home/workspace/node_modules/esbuild/lib/main.js:755:50
+      at responseCallbacks.<computed> (/home/workspace/node_modules/esbuild/lib/main.js:622:9)
+      at handleIncomingPacket (/home/workspace/node_modules/esbuild/lib/main.js:677:12)
+      at Socket.readFromStdout (/home/workspace/node_modules/esbuild/lib/main.js:600:7)
+      at Socket.emit (node:events:508:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+12:11:29 AM [vite] ✨ new dependencies optimized: framer-motion, lucide-react, @splinetool/react-spline
+12:11:29 AM [vite] ✨ optimized dependencies changed. reloading
+12:11:30 AM [vite] Pre-transform error: Transform failed with 1 error:
+/home/workspace/src/components/Portfolio.jsx:31:91: ERROR: Expected identifier but found "!"
+12:11:30 AM [vite] Internal server error: Transform failed with 1 error:
+/home/workspace/src/components/Portfolio.jsx:31:91: ERROR: Expected identifier but found "!"
+  Plugin: vite:esbuild
+  File: /home/workspace/src/components/Portfolio.jsx:31:91
+  
+  Expected identifier but found "!"
+  29 |            <p className="mt-3 text-sm text-white/60 md:text-base">Editorial visuals with dramatic cropping.</p>
+  30 |          </div>
+  31 |          <div className="columns-1 gap-5 md:columns-2 lg:columns-3 [column-fill:_balance]"><!-- masonry-like using CSS columns -->
+     |                                                                                             ^
+  32 |            {projects.map((p, idx) => (
+  33 |              <motion.a
+  
+      at failureErrorWithLog (/home/workspace/node_modules/esbuild/lib/main.js:1472:15)
+      at /home/workspace/node_modules/esbuild/lib/main.js:755:50
+      at responseCallbacks.<computed> (/home/workspace/node_modules/esbuild/lib/main.js:622:9)
+      at handleIncomingPacket (/home/workspace/node_modules/esbuild/lib/main.js:677:12)
+      at Socket.readFromStdout (/home/workspace/node_modules/esbuild/lib/main.js:600:7)
+      at Socket.emit (node:events:508:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+12:11:49 AM [vite] Internal server error: Transform failed with 1 error:
+/home/workspace/src/components/Portfolio.jsx:31:91: ERROR: Expected identifier but found "!"
+  Plugin: vite:esbuild
+  File: /home/workspace/src/components/Portfolio.jsx:31:91
+  
+  Expected identifier but found "!"
+  29 |            <p className="mt-3 text-sm text-white/60 md:text-base">Editorial visuals with dramatic cropping.</p>
+  30 |          </div>
+  31 |          <div className="columns-1 gap-5 md:columns-2 lg:columns-3 [column-fill:_balance]"><!-- masonry-like using CSS columns -->
+     |                                                                                             ^
+  32 |            {projects.map((p, idx) => (
+  33 |              <motion.a
+  
+      at failureErrorWithLog (/home/workspace/node_modules/esbuild/lib/main.js:1472:15)
+      at /home/workspace/node_modules/esbuild/lib/main.js:755:50
+      at responseCallbacks.<computed> (/home/workspace/node_modules/esbuild/lib/main.js:622:9)
+      at handleIncomingPacket (/home/workspace/node_modules/esbuild/lib/main.js:677:12)
+      at Socket.readFromStdout (/home/workspace/node_modules/esbuild/lib/main.js:600:7)
+      at Socket.emit (node:events:508:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+12:12:15 AM [vite] Internal server error: Transform failed with 1 error:
+/home/workspace/src/components/Portfolio.jsx:31:91: ERROR: Expected identifier but found "!"
+  Plugin: vite:esbuild
+  File: /home/workspace/src/components/Portfolio.jsx:31:91
+  
+  Expected identifier but found "!"
+  29 |            <p className="mt-3 text-sm text-white/60 md:text-base">Editorial visuals with dramatic cropping.</p>
+  30 |          </div>
+  31 |          <div className="columns-1 gap-5 md:columns-2 lg:columns-3 [column-fill:_balance]"><!-- masonry-like using CSS columns -->
+     |                                                                                             ^
+  32 |            {projects.map((p, idx) => (
+  33 |              <motion.a
+  
+      at failureErrorWithLog (/home/workspace/node_modules/esbuild/lib/main.js:1472:15)
+      at /home/workspace/node_modules/esbuild/lib/main.js:755:50
+      at responseCallbacks.<computed> (/home/workspace/node_modules/esbuild/lib/main.js:622:9)
+      at handleIncomingPacket (/home/workspace/node_modules/esbuild/lib/main.js:677:12)
+      at Socket.readFromStdout (/home/workspace/node_modules/esbuild/lib/main.js:600:7)
+      at Socket.emit (node:events:508:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
